@@ -1,0 +1,54 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100vh - 164px);
+    color: turquoise;
+    font-family: 'Courier New';
+}
+
+.shop-now-button {
+    background: fuchsia;
+    color: white;
+    min-width: 250px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: purple;
+    color: white;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Extra Large screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* Fixed-top navbar on medium-sized and larger screens */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 170px;
+    }
+}
