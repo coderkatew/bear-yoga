@@ -1,0 +1,34 @@
+[
+   {
+      "pk":1,
+      "model":"products.category",
+      "fields":{
+         "name":"mats",
+         "friendly_name":"Yoga Mats"
+      }
+   },
+   {
+      "pk":2,
+      "model":"products.category",
+      "fields":{
+         "name":"props",
+         "friendly_name":"Props"
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.category",
+      "fields":{
+         "name":"oils_incense",
+         "friendly_name":"Oils & Incense"
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.category",
+      "fields":{
+         "name":"accessories",
+         "friendly_name":"Accessories"
+      }
+   }
+]

@@ -1,0 +1,324 @@
+[
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07L9HVSW2",
+         "name":"IUGA Non Slip Yoga Mat",
+         "description":"IUGA Mat has double-sided non-slip surfaces so you can perform any movement with confidence. Exclusive designed “Bone” pattern underside stops mat from sliding on floor. The subtly textured surface prevents hands and feet from slipping out of position so you can hold poses no matter how vigorous your practice gets. Guaranteed to provide the optimal level of cushion and protection for your joints and knees while still allowing you to grip the floor for balance poses.",
+         "price":22.95,
+         "category":1,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/71pSktIgxSL._AC_SL1500_.jpg",
+         "image":"mat1.jpg"
+      }
+   },
+   {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "sku":"B08BYPQNHV",
+         "name":"GISALA Yoga Mat",
+         "description":"Yoga mats made from 100% recyclable TPE and hypoallergenic materials. The GISALA yoga mat is designed so that it acts like a comfortable mattress and at the same time is with good flexibility. In this way, knees and elbows are protected for the long term. A portable bag for easy transportation is required.",
+         "price":29.99,
+         "category":1,
+         "rating":5,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/81WBZ1-t63L._AC_SL1500_.jpg",
+         "image":"mat2.jpg"
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07VD9JRJ4",
+         "name":"Jade Yoga Harmony Yoga Mat",
+         "description":"Great Grip - open cell natural rubber provides optimum grip. Comfortable - natural rubber has more resilience and cushion. Through its partnership with Trees for the Future, JadeYoga plants a Tree with every mat sold. Made in the US with natural rubber, a renewable resource and contains no synthetic plastics.",
+         "price":69.00,
+         "category":1,
+         "rating":5,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/71eQ6fGgSFL._AC_SL1500_.jpg",
+         "image":"mat3.jpg"
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+         "sku":"137011077",
+         "name":"Manduka eKO Superlight Travel Yoga Mat",
+         "description":"Folds to fit in any travel bag or purse. Surface texture offers superior grip, even with light perspiration. Tightly woven scrim resists tearing or stretching. Closed cell design will not absorb bacteria. Made from non-Amazon harvested, natural tree rubber. No PVC, toxic plasticizers or harmful dyes.",
+         "price":34.41,
+         "category":1,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/71RFx0WoljL._AC_SL1500_.jpg",
+         "image":"travel_mat.jpg"
+      }
+   },
+   {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07D8YS3NT",
+         "name":"Yogibato Yoga Block Cork",
+         "description":"Yogibato cork blocks offer great support, especially when learning new asanas. The material is easy to grip and ensures secure hold even during strenuous yoga exercises.",
+         "price":11.90,
+         "category":2,
+         "rating":3,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/81DS71se5WL._AC_SL1500_.jpg",
+         "image":"block1.jpg"
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07PB11HD2",
+         "name":"Myga Foam Yoga Block",
+         "description":"The Myga Foam Yoga Block is a fantastic way to improve your balance and deepen your flexibility. Ideal yoga equipment for both beginners and advanced yogis.",
+         "price":5.99,
+         "category":2,
+         "rating":5,
+         "image_url":"https://m.media-amazon.com/images/I/81DmElhHkAL._AC_SL1500_.jpg",
+         "image":"block2.jpg"
+      }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07GT1LTW7",
+         "name":"Leewadee Long Yoga Bolster",
+         "description":"Comfortable, stable and breathable thanks to the use of natural plant materials. Perfect for your meditative hours. Not a foam cushion, but all natural materials! Supporting for lower back, knees, legs, feet.",
+         "price":36.99,
+         "category":2,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/81xaKnrpczL._AC_SL1500_.jpg",
+         "image":"bolster1.jpg"
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+         "sku":"B08BWX74LB",
+         "name":"Present Mind Yoga Bolster Roll",
+         "description":"Perfect support - the yoga bolster from Present Mind can help you maintain balance and ensures comfort during exercises. Washable cotton cover - owing to the robust zip placed along the entire width of the bolster, you can remove the cover, machine wash it and easily put it on again.",
+         "price":34.95,
+         "category":2,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/712bd9BYGIL._AC_SL1500_.jpg",
+         "image":"bolster2.jpg"
+      }
+   },
+   {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+         "sku":"B00G13C52G",
+         "name":"100% Traditional Cotton Yoga Blanket",
+         "description":"Made in India - Material - 100% handwoven cotton. Extra long traditional100% Indian cotton yoga blanket",
+         "price":23.25,
+         "category":2,
+         "rating":5,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/81B0fBMVGML._AC_SL1500_.jpg",
+         "image":"blanket1.jpg"
+      }
+   },
+   {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "sku":"B0756DHNY7",
+         "name":"Anjou Essential Oils Set",
+         "description":"Diffuser Essential Oils Set of 12: Peppermint, Lavender, Eucalyptus, Tea Tree, Sweet Orange, Lemongrass, Bergamot, Frankincense, Lemon, Rosemary, Cinnamon, and Ylang-Ylang.",
+         "price":14.99,
+         "category":3,
+         "rating":3,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/71e6NzIBbIL._AC_SL1500_.jpg",
+         "image":"essentialoil1.jpg"
+      }
+   },
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07CT39BC4",
+         "name":"Little Box Of Mindfulness",
+         "description":"Made of 100 Percent natural Blends made with pure essential oils.",
+         "price":13.45,
+         "category":3,
+         "rating":5,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/71cUskrdBgL._AC_SL1300_.jpg",
+         "image":"essentialoil2.jpg"
+      }
+   },
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"B01M07TZKA",
+         "name":"Wooden Incense Stand",
+         "description":"Complement your yoga and meditation practice with this high quality incense burner. Enhance concentration and stimulate creativity.",
+         "price":1.99,
+         "category":3,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/61C-uB0ufAL._AC_SL1178_.jpg",
+         "image":"incenseholder1.jpg"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"B083HMS71B",
+         "name":"Painted Leaf Wooden Incense Burner",
+         "description":"Carved with intricate leaf design and finished with wax to protect and enhance the natural wood.",
+         "price":53.99,
+         "category":3,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/51-aWF5oTeL._AC_.jpg",
+         "image":"incenseholder2.jpg"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"B000KEKL0K",
+         "name":"Sandalwood Incense Sticks",
+         "description":"Whether you are entertaining, relaxing or just wanting to add a bit of style to your home, these Stamford Incense Sticks are sure to do the job. Stamford produces great value incense sticks.",
+         "price":2.40,
+         "category":3,
+         "rating":5,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/71VSge7DdyL._AC_SL1500_.jpg",
+         "image":"incense1.jpg"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"B000KEINVO",
+         "name":"Frankincense and Myrrh Incense Sticks",
+         "description":"Whether you are entertaining, relaxing or just wanting to add a bit of style to your home, these Stamford Incense Sticks are sure to do the job. Stamford produces great value incense sticks.",
+         "price":1.94,
+         "category":3,
+         "rating":3,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/71%2BunIAVKlL._AC_SL1500_.jpg",
+         "image":"incense2.jpg"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"B006VICZAI",
+         "name":"Lavender Incense Sticks",
+         "description":"Whether you are entertaining, relaxing or just wanting to add a bit of style to your home, these Stamford Incense Sticks are sure to do the job. Stamford produces great value incense sticks.",
+         "price":1.94,
+         "category":3,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/71kwKKgEO7L._AC_SL1500_.jpg",
+         "image":"incense3.jpg"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "sku":"B0146GGGAG",
+         "name":"Blue Dove Yoga Mat Bag",
+         "description":"Stow your yoga mat in this roomy bag that measures 68cms long x 25cms wide (measured flat). Big enough to store a 65 cm width and 5 mm thick mat or 14 cm in diameter when rolled up.",
+         "price":12.00,
+         "category":4,
+         "rating":5,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/81oKSxYWPrL._AC_SL1500_.jpg",
+         "image":"bag1.jpg"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "sku":"B01M18J0P8",
+         "name":"Lotuscrafts Yoga Mat Bag",
+         "description":"With the yoga mat bag from Lotuscrafts you always have your yoga kit to hand. Thanks to the adjustable shoulder strap the yoga mat carrier bag is also very comfortable to wear.",
+         "price":22.95,
+         "category":4,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/518gJUy1C8L._AC_SL1024_.jpg",
+         "image":"bag2.jpg"
+      }
+   },
+   {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+         "sku":"B08LDNPS9Y",
+         "name":"Zen Green Stainless Steel Eco Water Bottle",
+         "description":"EcoFriendly BPA and BPS free. Recommended by health professionals worldwide as the safest material for your beverages. Guaranteed leakproof, safe, certified by the FDA for material and product safety.",
+         "price":16.00,
+         "category":4,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/61vSExy8kxL._AC_SL1500_.jpg",
+         "image":"bottle1.jpg"
+      }
+   },
+   {
+      "pk":20,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07MPCW3KV",
+         "name":"Insulated Water Bottle",
+         "description":"Stainless steel and a chic bamboo lid! The metal water bottle comes without any paint to ensure scratch resistance and durability. The neutral design makes the reusable water bottle ideal for work, hiking, yoga, travelling and all everyday activities.",
+         "price":14.99,
+         "category":4,
+         "rating":4,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/61HNiqOhWxL._AC_SL1500_.jpg",
+         "image":"bottle2.jpg"
+      }
+   },
+   {
+      "pk":21,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07JPLNKV6",
+         "name":"Blue Dove Yoga Eye Pillow - Turquoise",
+         "description":"Silk eye pillow with inner 100 % cotton case. Filled with flax seed and hint of lavender.",
+         "price":9.99,
+         "category":4,
+         "rating":5,
+         "image_url":"https://images-na.ssl-images-amazon.com/images/I/91E8BaMeZwL._AC_SL1500_.jpg",
+         "image":"eyepillow1.jpg"
+      }
+   },
+   {
+      "pk":22,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07JQCC5HN",
+         "name":"Blue Dove Yoga Eye Pillow - Red",
+         "description":"Silk eye pillow with inner 100 % cotton case. Filled with flax seed and hint of lavender.",
+         "price":9.99,
+         "category":4,
+         "rating":5,
+         "image_url":"https://m.media-amazon.com/images/I/A10LG5965NL._AC_SL1500_.jpg",
+         "image":"eyepillow2.jpg"
+      }
+   },
+   {
+      "pk":23,
+      "model":"products.product",
+      "fields":{
+         "sku":"B07JQ7FWCD",
+         "name":"Blue Dove Yoga Eye Pillow - Pink",
+         "description":"Silk eye pillow with inner 100 % cotton case. Filled with flax seed and hint of lavender.",
+         "price":9.99,
+         "category":4,
+         "rating":5,
+         "image_url":"https://m.media-amazon.com/images/I/81pD6Ztn4HL._AC_SL1500_.jpg",
+         "image":"eyepillow3.jpg"
+      }
+   }
+]
