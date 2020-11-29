@@ -17,18 +17,30 @@
                 Yoga Mats
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="yoga-mats">
-                <a href="" class="dropdown-item">Beginner</a>
-                <a href="" class="dropdown-item">Organic</a>
+                <a href="{% url 'products' %}?category=mats,travel_mats" class="dropdown-item">All Mats</a>
+                <a href="{% url 'products' %}?category=travel_mats" class="dropdown-item">Travel Mats</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clothing
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="yoga-props" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Props
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Tops</a>
-                <a href="" class="dropdown-item">Yoga Pants</a>
+            <div class="dropdown-menu border-0" aria-labelledby="yoga-props">
+                <a href="{% url 'products' %}?category=blocks" class="dropdown-item">Blocks</a>
+                <a href="{% url 'products' %}?category=bolsters" class="dropdown-item">Bolsters</a>
+                <a href="{% url 'products' %}?category=blankets" class="dropdown-item">Blankets</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="oils-incense" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Oils & Incense
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="oils-incense">
+                <a href="{% url 'products' %}?category=essential_oils" class="dropdown-item">Essential Oils</a>
+                <a href="{% url 'products' %}?category=incense" class="dropdown-item">Incense</a>
+                <a href="{% url 'products' %}?category=incense_holders" class="dropdown-item">Incense Holders</a>
             </div>
         </li>
 
@@ -37,10 +49,9 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">Yoga Bands</a>
-                <a href="" class="dropdown-item">Blocks</a>
-                <a href="" class="dropdown-item">Towels</a>
-                <a href="" class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?category=bottles" class="dropdown-item">Bottles</a>
+                <a href="{% url 'products' %}?category=eye_pillows"  class="dropdown-item">Eye Pillows</a>
             </div>
         </li>
     </ul>
