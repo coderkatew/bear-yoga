@@ -19,6 +19,19 @@ body {
     color: white;
 }
 
+.btn-outline-black {
+    background: fuschia;
+    color: white;
+    border: 1px solid purple;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: purple;
+    color: white;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
