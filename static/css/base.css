@@ -42,6 +42,11 @@ body {
     color: white;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
