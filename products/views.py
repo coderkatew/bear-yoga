@@ -6,8 +6,6 @@ from django.db.models import Q
 from .models import Product, Category
 from .forms import ProductForm
 
-# Create your views here.
-
 
 def all_products(request):
     """ A view to show all products with sorting and search queries """
@@ -54,7 +52,17 @@ def product_detail(request, product_id):
 
 def add_product(request):
     """ Add product to the website """
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product added!')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Cannot add this product. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,
