@@ -1,1 +1,1 @@
-web: python manage.py
+web: gunicorn bear_yoga.wsgi:application
