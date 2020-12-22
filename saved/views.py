@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, HttpResponse, get_object
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-from products.models import Product, Category
+from products.models import Product
 
 
 def view_saved(request):
@@ -57,6 +57,7 @@ def add_to_saved(request, item_id):
         messages.success(request, f'{product.name} has been added to Saved For Later.')
 
     request.session['saved'] = saved
+
     return redirect(redirect_url)
 
 
