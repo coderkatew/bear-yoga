@@ -1,0 +1,58 @@
+[
+   {
+      "pk":1,
+      "model":"retreats.retreat",
+      "fields":{
+         "name":"Ashtanga Yoga Retreat",
+		 "date":"April 2021",
+		 "duration":"3",
+         "description":"Ashtanga yoga involves a very physically demanding sequence of postures, so this style of yoga is definitely not for the beginner. It takes an experienced yogi to really love it. Ashtanga starts with five sun salutation A's and five sun salutation B's and then moves into a series of standing and floor postures.",
+         "price":140.00,
+         "location":"Ireland",
+         "image_url":"https://images.unsplash.com/photo-1511219096939-ce77f5f44cc8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
+         "image":"ashtanga.jpg"
+      }
+   },
+   {
+      "pk":2,
+      "model":"retreats.retreat",
+      "fields":{
+         "name":"Hatha Yoga Retreat",
+		 "date":"June 2021",
+		 "duration":"3",
+         "description":"Hatha yoga classes are best for beginners since they are usually paced slower than other yoga styles. Hatha classes today are a classic approach to breathing and exercises. If you are brand-new to yoga, hatha yoga is a great entry point to the practice.",
+         "price":155.00,
+         "location":"Ireland",
+         "image_url":"https://images.unsplash.com/photo-1443792074828-38fccce9e428?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+         "image":"hatha.jpg"
+      }
+   },
+   {
+      "pk":3,
+      "model":"retreats.retreat",
+      "fields":{
+         "name":"Introduction to Yin Yoga",
+		 "date":"July 2021",
+		 "duration":"1",
+         "description":"Yin yoga is a slow-paced style of yoga with seated postures that are held for longer periods of time. Yin can also be a meditative yoga practice that helps you find inner peace. Yin is a great class for beginners. The classes are relaxed, as you're supposed to let gravity do most of the work.",
+         "price":50.00,
+         "location":"Ireland",
+         "image_url":"https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=770&q=80",
+         "image":"yinyoga.jpg"
+      }
+   },
+   {
+      "pk":4,
+      "model":"retreats.retreat",
+      "fields":{
+         "name":"Kundalini Yoga for Beginners",
+		 "date":"July 2021",
+		 "duration":"1",
+         "description":"These classes really work your core and breathing with fast-moving, invigorating postures and breath exercises. These classes are pretty intense and can involve chanting, mantra, and meditation.",
+         "price":60.00,
+         "location":"Ireland",
+         "image_url":"https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
+         "image":"kundalini.jpg"
+      }
+   }
+]
