@@ -1,15 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Roboto&family=Caveat:wght@700&display=swap');
+
 html {
     height: 100%;
 }
 
+nav {
+    background-color: black;
+}
+
+.list-inline-item {
+    color: black;
+}
+
 body {
     height: calc(100vh - 164px);
-    color: turquoise;
-    font-family: 'Courier New';
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-nav {
+    font-family: 'Noto Sans TC', sans-serif;
+    color:black;
+    padding: 2%;
+}
+
+#user-options,
+a.text-black {
+    color:black;
+}
+
+.navbar {
+    background-color:#3EB489;
+}
+
+.navbar li,
+.navbar a {
+    color: black;
+    background-color:#3EB489;
+}
+
+#category-nav {
+    color:black;
+}
+
+h1, h2 {
+    color: black;
+    font-family: 'Caveat', cursive;
 }
 
 .shop-now-button {
-    background: fuchsia;
+    background: black;
     color: white;
     min-width: 250px;
 }
@@ -20,7 +61,7 @@ body {
 }
 
 .btn-outline-black {
-    background: fuschia;
+    background: black;
     color: white;
     border: 1px solid purple;
 }
@@ -28,8 +69,8 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: purple;
-    color: white;
+    background: grey;
+    color: black;
 }
 
 .shop-now-button:hover,
@@ -38,8 +79,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: purple;
-    color: white;
+    background: grey;
+    color: black;
 }
 
 .update-link,
