@@ -11,24 +11,80 @@
       "pk":2,
       "model":"products.category",
       "fields":{
-         "name":"props",
-         "friendly_name":"Props"
+         "name":"travel_mats",
+         "friendly_name":"Travel Mats"
       }
    },
    {
       "pk":3,
       "model":"products.category",
       "fields":{
-         "name":"oils_incense",
-         "friendly_name":"Oils & Incense"
+         "name":"blocks",
+         "friendly_name":"Blocks"
       }
    },
    {
       "pk":4,
       "model":"products.category",
       "fields":{
-         "name":"accessories",
-         "friendly_name":"Accessories"
+         "name":"bolsters",
+         "friendly_name":"Bolsters"
+      }
+   },
+   {
+      "pk":5,
+      "model":"products.category",
+      "fields":{
+         "name":"blankets",
+         "friendly_name":"Blankets"
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.category",
+      "fields":{
+         "name":"essential_oils",
+         "friendly_name":"Essential Oils"
+      }
+   },
+   {
+      "pk":7,
+      "model":"products.category",
+      "fields":{
+         "name":"incense_holders",
+         "friendly_name":"Incense Holders"
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.category",
+      "fields":{
+         "name":"incense",
+         "friendly_name":"Incense"
+      }
+   },
+   {
+      "pk":9,
+      "model":"products.category",
+      "fields":{
+         "name":"bags",
+         "friendly_name":"Bags"
+      }
+   },
+   {
+      "pk":10,
+      "model":"products.category",
+      "fields":{
+         "name":"bottles",
+         "friendly_name":"Bottles"
+      }
+   },
+   {
+      "pk":11,
+      "model":"products.category",
+      "fields":{
+         "name":"eye_pillows",
+         "friendly_name":"Eye Pillows"
       }
    }
 ]
