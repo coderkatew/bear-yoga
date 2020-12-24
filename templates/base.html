@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Kate Walsh" />
     {% endblock %}
 
     {% block extra_meta %}
@@ -132,7 +133,31 @@
 
     {% block content %}
     {% endblock %}
-
+    {% block page_footer %}
+    <footer class="footer">
+		<div class="row footer-content">
+			<div class="col s3">
+				<ul class="social-links">
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com" target="_blank">
+                            <i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+			</div>
+			<div class="col s3">
+				<p class="footer-right">© 2021 Bear Yoga</p>
+			</div>
+		</div>
+    </footer>
+    {% endblock %}
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
