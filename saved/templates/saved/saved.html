@@ -51,6 +51,9 @@
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
+                                        <a href="{% url 'product_detail' item.product.id %}">
+                                        <span class="text-uppercase">View Item</span>
+                                    </a>
                                     </td>
                             {% endfor %}
                             {% else %}
