@@ -73,14 +73,21 @@
                                 </div>
                             </div>
                             <div class="col">
+                                <div class="row">
                                 <input type="submit" name="add_to_bag" formaction="{% url 'add_to_bag' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                {% if request.user.is_authenticated %}
                                 <input type="submit" name="add_to_saved" formaction="{% url 'add_to_saved' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-5" value="Save For Later">
+                                {% else %}
+                                </div>
+                                <div class="row"></div>
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Continue Shopping</span>
                                 </a>
+                                </div>
+                                {% endif %}
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
