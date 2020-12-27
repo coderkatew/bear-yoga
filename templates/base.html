@@ -69,9 +69,6 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
-                                {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">Profile</a>
                                 <a href="{% url 'view_saved' %}" class="dropdown-item">Saved For Later</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -83,13 +80,13 @@
                     </li>
                      {% if request.user.is_superuser %}
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link" href="#" id="admin-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-edit fa-lg"></i></div>
                                 <p class="my-0">Admin</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0" aria-labelledby="admin-options">
                         <a href="{% url 'add_retreat' %}" class="dropdown-item">Add Retreat</a>
                         <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
                         </div>
@@ -122,13 +119,11 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <div class="row">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#category-nav" aria-controls="category-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/category-nav.html' %}
-            </nav>
         </div>
     </header>
 

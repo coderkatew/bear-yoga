@@ -5,6 +5,17 @@
                 Home
             </a>
         </li>
+        {% if request.user.is_superuser %}
+        <li class="nav-item dropdown d-md-none">
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="admin-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Admin
+            </a>
+        <div class="dropdown-menu border-0" aria-labelledby="admin-options">
+            <a href="{% url 'add_retreat' %}" class="dropdown-item">Add Retreat</a>
+            <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
+        </div>
+        </li>
+        {% endif %}
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 View All
@@ -58,6 +69,11 @@
                 <a href="{% url 'products' %}?category=bottles" class="dropdown-item">Bottles</a>
                 <a href="{% url 'products' %}?category=eye_pillows"  class="dropdown-item">Eye Pillows</a>
             </div>
+        </li>
+        <li class="nav-item d-block d-md-none">
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" id="contact">
+                Contact
+            </a>
         </li>
     </ul>
 </div>
