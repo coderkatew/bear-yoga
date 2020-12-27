@@ -93,7 +93,7 @@
                     </li>
                     {% endif %}
                     <li class="list-inline-item">
-                        <a class="text-black {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" id="shopping-bag" href="{% url 'view_bag' %}">
+                        <a class="text-black nav-link{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" id="shopping-bag" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">

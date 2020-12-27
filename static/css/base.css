@@ -33,6 +33,11 @@ main {
     padding: 2%;
 }
 
+#category-nav a {
+    color:black;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
 #user-options,
 #shopping-bag,
 a.text-black {
@@ -46,12 +51,9 @@ a.text-black {
 .navbar li,
 .navbar a {
     color: black;
-    background-color:#3EB489;
 }
 
-#category-nav a {
-    color:black;
-}
+
 
 h1, h2 {
     color: black;
