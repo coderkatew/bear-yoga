@@ -70,6 +70,18 @@ def edit_retreat(request, retreat_id):
     return render(request, template, context)
 
 
+def retreat_detail(request, retreat_id):
+    """ A view to show the retreat detail page """
+
+    retreat = get_object_or_404(Retreat, pk=retreat_id)
+
+    context = {
+        'retreat': retreat,
+    }
+
+    return render(request, 'retreats/retreat_detail.html', context)
+
+
 @login_required
 def delete_retreat(request, retreat_id):
     """ Delete a retreat entry """
