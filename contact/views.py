@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
 from .models import Contact
 from .forms import ContactForm
 
@@ -37,4 +38,4 @@ def contact(request):
         else:
             messages.error(request, 'There was an error submitting your message. Please ensure the form is complete.')
 
-    return redirect(reverse('retreats'))
+    return redirect(reverse('home'))
