@@ -54,7 +54,6 @@ a.text-black {
 }
 
 
-
 h1, h2 {
     color: black;
     font-family: 'Caveat', cursive;
@@ -259,6 +258,14 @@ footer {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+}
+
+@media (max-width: 1230px) {
+
+.nav-link {
+    margin: 0;
+    padding: 0;
+}
 }
 
 /*-- Media Queries - Footer -----*/
