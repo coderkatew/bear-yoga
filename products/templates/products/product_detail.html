@@ -71,16 +71,15 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col">
+                                <input type="submit" name="add_to_bag" formaction="{% url 'add_to_bag' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" name="add_to_saved" formaction="{% url 'add_to_saved' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-5" value="Save For Later">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Continue Shopping</span>
                                 </a>
-                                <input type="submit" name="add_to_bag" formaction="{% url 'add_to_bag' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
-                                <input type="submit" name="add_to_saved" formaction="{% url 'add_to_saved' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-5" value="Save For Later">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
