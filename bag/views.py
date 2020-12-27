@@ -50,9 +50,8 @@ def remove_from_bag(request, item_id):
     """ Remove product from shopping bag """
 
     try:
-
-        bag = request.session.get('bag', {})
         product = get_object_or_404(Product, pk=item_id)
+        bag = request.session.get('bag', {})
 
         bag.pop(item_id)
         messages.success(request, f'{product.name} has been removed from your shopping bag.')
