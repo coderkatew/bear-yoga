@@ -40,15 +40,18 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ retreat.location }}</p>
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ retreat.duration }} Days</small>
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ retreat.price }}</small>
+                                            <div>
+                                            <p class="lead mb-0 text-left font-weight-bold">{{ retreat.location }}</p>
+                                                <small class="text-muted">{{ retreat.duration }} Days</small>
+                                                <small class="text-muted">$ {{ retreat.price }}</small>
+                                            </div>
+                                            <div>
                                             {% if request.user.is_superuser %}
-                                            <p class="mt-3">{{ retreat.description }}</p>
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_retreat' retreat.id %}">Edit</a> | 
                                                     <a class="text-danger" href="{% url 'delete_retreat' retreat.id %}">Delete</a>
                                                 </small>
+                                            </div>
                                             {% endif %}
                                         </div>
                                     </div>
