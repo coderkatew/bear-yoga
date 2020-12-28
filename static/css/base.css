@@ -254,7 +254,13 @@ footer {
     }
 
     .navbar-toggler {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        color: black;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        color: black;
     }
 
     .btn.btn-outline-black.rounded-0,
