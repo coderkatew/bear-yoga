@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Shopping Bag</h2>
+                <h2 class="logo-font mb-4">Shopping Bag ({{ item_count }})</h2>
                 <hr>
             </div>
         </div>
@@ -88,7 +88,7 @@
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-                                    <h6><strong>Subtotal: ${{ total|floatformat:2 }}</strong></h6>
+                                    <h6>Subtotal: ${{ order_total|floatformat:2 }}</h6>
                                     <h6>Delivery Fee: ${{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
