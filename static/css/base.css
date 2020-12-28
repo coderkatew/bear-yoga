@@ -67,6 +67,7 @@ h1, h2 {
 .btn-black {
     background: black;
     color: white;
+    margin: 1px;
 }
 
 .btn-outline-black {
