@@ -33,6 +33,10 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+#category-nav a#retreats {
+    margin-left: 30px;
+}
+
 #user-options,
 #shopping-bag,
 a.text-black {
@@ -261,6 +265,14 @@ footer {
 
     .navbar-toggler-icon {
         color: black;
+    }
+
+    #category-nav a#retreats {
+        margin-left: 0;
+    }
+
+    #category-nav a {
+        padding: 5px 0 5px 0;
     }
 
     .btn.btn-outline-black.rounded-0,
