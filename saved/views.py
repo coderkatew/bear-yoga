@@ -32,10 +32,10 @@ def adjust_saved(request, item_id):
 
     if quantity > 0:
         saved[item_id] = quantity
-        messages.success(request, f'Updated quantity of {product.name} to {saved[item_id]}.')
+        messages.info(request, f'Updated quantity of {product.name} to {saved[item_id]}.')
     else:
         saved.pop(item_id)
-        messages.success(request, f'{product.name} has been removed.')
+        messages.info(request, f'{product.name} has been removed.')
 
     request.session['saved'] = saved
     return redirect(reverse('view_saved'))
@@ -51,10 +51,10 @@ def add_to_saved(request, item_id):
 
     if item_id in list(saved.keys()):
         saved[item_id] += quantity
-        messages.success(request, f'Updated quantity of {product.name} to {saved[item_id]}.')
+        messages.info(request, f'Updated quantity of {product.name} to {saved[item_id]}.')
     else:
         saved[item_id] = quantity
-        messages.success(request, f'{product.name} has been added to Saved For Later.')
+        messages.info(request, f'{product.name} has been added to saved items.')
 
     request.session['saved'] = saved
 
@@ -70,7 +70,7 @@ def remove_from_saved(request, item_id):
         product = get_object_or_404(Product, pk=item_id)
 
         saved.pop(item_id)
-        messages.success(request, f'{product.name} has been removed from Saved For Later.')
+        messages.info(request, f'{product.name} has been removed from saved items.')
 
         request.session['saved'] = saved
         return HttpResponse(status=200)
