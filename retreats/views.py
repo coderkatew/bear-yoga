@@ -26,7 +26,7 @@ def add_retreat(request):
         form = RetreatForm(request.POST, request.FILES)
         if form.is_valid():
             retreat = form.save()
-            messages.success(request, 'Entry added!')
+            messages.info(request, 'Entry added!')
             return redirect(reverse('retreat_detail', args=[retreat.id]))
         else:
             messages.error(request, 'Cannot add this entry. Please ensure the form is valid.')
@@ -53,7 +53,7 @@ def edit_retreat(request, retreat_id):
         form = RetreatForm(request.POST, request.FILES, instance=retreat)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Entry updated!')
+            messages.info(request, 'Entry updated!')
             return redirect(reverse('retreat_detail', args=[retreat.id]))
         else:
             messages.error(request, 'Cannot update this entry. Please ensure form is complete.')
@@ -91,5 +91,5 @@ def delete_retreat(request, retreat_id):
         
     retreat = get_object_or_404(Retreat, pk=retreat_id)
     retreat.delete()
-    messages.success(request, 'Entry deleted!')
+    messages.info(request, 'Entry deleted!')
     return redirect(reverse('retreats'))
