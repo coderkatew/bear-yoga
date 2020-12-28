@@ -14,12 +14,11 @@ nav {
 }
 
 body {
-    height: calc(100vh - 16);
+    min-height: 100vh;
     background-color: white;
     color: black;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    height: 100%;
     flex-direction: column;
 }
 
