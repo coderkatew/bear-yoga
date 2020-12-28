@@ -15,7 +15,6 @@
     <div class="container mb-2">
         <div class="row">
             <div class="col">
-                <hr>
                 <h2 class="logo-font mb-4">Shopping Bag ({{ item_count }})</h2>
                 <hr>
             </div>
@@ -32,7 +31,8 @@
                         <div class="row">
                             <div class="col">
                                 {% include "bag/checkout-buttons.html" %}
-                                <p class="text-muted mb-5">See Order Summary below</p>
+                                <hr>
+                                <p class="text-black mb-5">Here is your Order Summary:</p>
                             </div>
                         </div>
                         {% for item in bag_items %}
