@@ -1,3 +1,20 @@
 from django.test import TestCase
+from .forms import OrderForm
 
-# Create your tests here.
+
+class TestOrderForm(TestCase):
+
+    def test_required_fields(self):
+        form = OrderForm({
+            'full_name': 'Mr Test',
+            'email': 'bearyoga@example.com',
+            'phone_number': '012 3456789',
+            'country': 'IE',
+            'address_line1': '1 Test Lane',
+            'town_or_city': 'Big City'})     
+        self.assertTrue(form.is_valid())
+
+    def test_alert_invalid_form(self):
+        form = OrderForm({'form': ''})
+        self.assertFalse(form.is_valid())
+        self.assertEqual(form.errors['full_name'], [u'This field is required.'])
