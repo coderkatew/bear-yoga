@@ -24,8 +24,6 @@ def contact_form(request):
 
     return render(request, template, context)
 
-
-
 def contact(request):
     """ Submit contact form """
 
