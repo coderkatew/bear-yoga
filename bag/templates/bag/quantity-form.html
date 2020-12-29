@@ -1,5 +1,6 @@
 <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
     {% csrf_token %}
+    <!-- csrf token generates unique value for request for increased security -->
     <div class="form-group">
         <div class="input-group">
             <div class="input-group-prepend">
