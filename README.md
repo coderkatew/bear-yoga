@@ -28,6 +28,36 @@ The following test card details can be used to submit test Stripe payments on th
 ## UX
 <br>
 
+### User Stories
+**As a site visitor, I want to:**
+* View a list of products so that I can select items I want to purchase.
+* View individual product details so that I can easily see the price, description and product rating.
+* Easily view the total cost of the items in my shopping bag so that I can keep track of my spending.
+* Easily register for an account so that I can save my details and view my purchase history
+* Sort the list of products so that I can quickly identify the cheapest or most expensive items.
+* Sort the list of products so that I can quickly identify products with the highest ratings.
+* Search for an item using a keyword so I can find relevant products.
+* Sort by category so that I can view all items in a specific category.
+* Adjust the quantity of items I am ordering so that I can add more than one of each item to my shopping bag at a time, or adjust the quantity if I change my mind.
+* See some form of feedback on screen when I take an action so that I can be sure I have completed the action I intended to.
+* Easily contact the shop owner so that I can ask for more information about products and retreats, or notify them of issues with my order.
+<br>
+
+**As a registered user, I want to:**
+* Easily sign in and sign out of the site so that I can access my account information quickly.
+* Easily recover my password so that I can access my account if I have forgotten my password.
+* View my personal profile so that I can view and update or delete my details.
+* View my order history so that I can see what products I have ordered in the past if I want to order again.
+* Save products to my profile so that I can easily find them if I decide to purchase them at a later time.
+* View a list of upcoming yoga retreats so that I can decide if I will attend a retreat.
+* Save my payment information so that I can checkout quickly the next time I place an order.
+<br>
+
+**As a site owner or shop administrator, I want to:**
+* Have special permissions so that I can add, view, edit and delete (CRUD) products and retreats on the site.
+* Easily access an admin menu so that I can quickly add products and retreats to the site.
+<br>
+
 ## Documentation
 <br>
 
@@ -153,7 +183,7 @@ The following technologies were used to build this project:
 **Balsamiq** - To create project wireframes.
 
 ## Testing
-The testing process and results for this project can be found in the [testing.md file](../testing.md).
+The testing process and results for this project can be found in the [testing.md file](https://github.com/coderkatew/bear-yoga/blob/master/testing.md).
 <br>
 
 ## Deployment
