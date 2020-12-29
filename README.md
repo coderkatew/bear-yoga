@@ -69,6 +69,29 @@ Email | email | EmailField | max_length=254, null=True, blank=False
 Message | message | TextField |
 <br>
 
+**Product App**<br>
+<br>
+
+***Categories***
+Name | KEY (Database) | Field Type | Validation<br>
+------------ | ------------- | ------------- | -------------
+Name | name | CharField | max_length=254
+Friendly Name | friendly_name | CharField | max_length=254, null=True, blank=True 
+<br>
+
+***Products***
+Name | KEY (Database) | Field Type | Validation<br>
+------------ | ------------- | ------------- | -------------
+Category | category | ForeignKey | 'Category', null=True, blank=True, on_delete=models.SET_NULL 
+SKU | sku | CharField | max_length=254, null=True, blank=True 
+Name | name | CharField | max_length=254
+Description | description | TextField | 
+Price | price  | DecimalField | max_digits=6, decimal_places=2
+Rating | rating | IntegerFiel | null=True, blank=True
+Image URL | image_url | URLField | max_length=1024, null=True, blank=True 
+Image | image | ImageField | null=True, blank=True
+<br>
+
 
 ## Technologies Used
 <br>
