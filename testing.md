@@ -1,5 +1,5 @@
 # Project Testing
-<br>
+
 
 1. Automated Testing
 
@@ -8,6 +8,14 @@
 3. User Stories
 
 4. Bugs
+
+<br>
+
+[Go to Bear Yoga site](https://bear-yoga.herokuapp.com/)
+
+[Go to README.md](https://github.com/coderkatew/bear-yoga/blob/master/README.md)
+<br>
+<br>
 
 ## Automated Testing
 ### Django Unit Tests
