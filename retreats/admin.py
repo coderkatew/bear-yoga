@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Retreat
 
+
 class RetreatAdmin(admin.ModelAdmin):
     list_display = (
         'name',
@@ -11,5 +12,6 @@ class RetreatAdmin(admin.ModelAdmin):
         'location',
         'image',
     )
+
 
 admin.site.register(Retreat, RetreatAdmin)

@@ -8,7 +8,7 @@ class TestRetreatForm(TestCase):
         form = RetreatForm({
             'name': 'Yoga Retreat',
             'date': '06/10/2021',
-            'duration': '3',            
+            'duration': '3',
             'description': 'Lovely retreat.',
             'price': '150',
             'location': 'Italy'})

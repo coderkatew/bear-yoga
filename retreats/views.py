@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404
+)
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
@@ -45,7 +47,8 @@ def add_retreat(request):
 def edit_retreat(request, retreat_id):
     """ Edit existing retreat entry  """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only administrators can complete this action.')
+        messages.error(request, 'Sorry, \
+        only administrators can complete this action.')
         return redirect(reverse('home'))
 
     retreat = get_object_or_404(Retreat, pk=retreat_id)
@@ -56,7 +59,8 @@ def edit_retreat(request, retreat_id):
             messages.info(request, 'Entry updated!')
             return redirect(reverse('retreat_detail', args=[retreat.id]))
         else:
-            messages.error(request, 'Cannot update this entry. Please ensure form is complete.')
+            messages.error(request, 'Cannot update this entry. \
+            Please ensure form is complete.')
     else:
         form = RetreatForm(instance=retreat)
         messages.info(request, f'You are editing {retreat.name}')
@@ -86,9 +90,10 @@ def retreat_detail(request, retreat_id):
 def delete_retreat(request, retreat_id):
     """ Delete a retreat entry """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only administrators can complete this action.')
+        messages.error(request, 'Sorry, \
+        only administrators can complete this action.')
         return redirect(reverse('home'))
-        
+
     retreat = get_object_or_404(Retreat, pk=retreat_id)
     retreat.delete()
     messages.info(request, 'Entry deleted!')
