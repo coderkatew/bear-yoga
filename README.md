@@ -105,7 +105,18 @@ Country | default_country | CountryField  | blank_label='Country', null=True, bl
 Postcode | default_postcode | CharField | max_length=20, null=True, blank=True
 <br>
 
-
+**Retreats App**<br>
+Name | KEY (Database) | Field Type | Validation<br>
+------------ | ------------- | ------------- | -------------
+Name| name | CharField | max_length=200
+Date | date | CharField | max_length=200 
+Duration | duration| CharField | max_length=200 
+Description| description | TextField | null=False, blank=False, default=''
+Price | price | DecimalField | max_digits=10, decimal_places=2, null=False, default=0 
+Location| location| CharField | max_length=200
+Image URL | image_url | URLField | max_length=1024, null=True, blank=True 
+Image | image | ImageField | null=True, blank=True
+<br>
 
 ## Technologies Used
 <br>
