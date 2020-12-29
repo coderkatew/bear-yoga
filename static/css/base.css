@@ -115,6 +115,15 @@ h1, h2 {
     font-size: .75rem;
 }
 
+.order-confirmation-wrapper {
+    color: black;
+}
+
+.order-confirmation {
+    align-content: center;
+    margin-bottom: 10px;
+}
+
 /* -------------------------------- Toasts */
 
 .message-container {
