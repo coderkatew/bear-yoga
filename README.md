@@ -59,6 +59,16 @@ Subtotal | order_total | DecimalField | max_digits=10, decimal_places=2, null=Fa
 Total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
 Shopping Bag| original_bag | TextField | null=False, blank=False, default=''
 Stripe PID | stripe_pid | CharField | max_length=254, null=False, blank=False, default=''
+<br>
+
+**Contact App**<br>
+Name | KEY (Database) | Field Type | Validation<br>
+------------ | ------------- | ------------- | -------------
+Name | name | CharField | max_length=254 
+Email | email | EmailField | max_length=254, null=True, blank=False 
+Message | message | TextField |
+<br>
+
 
 ## Technologies Used
 <br>
