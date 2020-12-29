@@ -153,6 +153,7 @@ The following technologies were used to build this project:
 **Balsamiq** - To create project wireframes.
 
 ## Testing
+The testing process and results for this project can be found in the [testing.md file](../testing.md).
 <br>
 
 ## Deployment
@@ -224,7 +225,6 @@ To deploy the project to Heroku, you can follow these steps:
 
 ## Credits and Acknowledgements
 ### Content and Media
-<br>
 
 **Product Images and Details** - All product information (text and images) is from [Amazon](https://amazon.co.uk).
 <br> 
