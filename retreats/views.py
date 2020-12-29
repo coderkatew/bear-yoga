@@ -21,7 +21,8 @@ def retreats(request):
 def add_retreat(request):
     """ Add retreat to the website """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only administrators can complete this action.')
+        messages.error(request, 'Sorry, \
+        only administrators can complete this action.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -31,7 +32,8 @@ def add_retreat(request):
             messages.info(request, 'Entry added!')
             return redirect(reverse('retreat_detail', args=[retreat.id]))
         else:
-            messages.error(request, 'Cannot add this entry. Please ensure the form is valid.')
+            messages.error(request, 'Cannot add this entry. \
+            Please ensure the form is valid.')
     else:
         form = RetreatForm()
 

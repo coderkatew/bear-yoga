@@ -6,7 +6,7 @@ class Retreat(models.Model):
     date = models.CharField(max_length=200)
     duration = models.CharField(max_length=200)
     description = models.TextField(null=False, blank=False, default='')
-    price = models.DecimalField(max_digits=10, 
+    price = models.DecimalField(max_digits=10,
                                 decimal_places=2, null=False, default=0)
     location = models.CharField(max_length=200)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
