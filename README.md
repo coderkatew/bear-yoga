@@ -125,6 +125,15 @@ Users can review their shopping bag and update quantities or remove items before
 <img src="static/images/checkout.png" style="margin: 0;">
 <br><br>
 
+### Features Left to Implement
+**Retreat Booking System** - A booking system that allows users to book and pay for upcoming yoga retreats. Users who have opted in on their profile could be notified when a new event has been added, and submit reviews of past events.
+<br>
+
+**Admin Order Dashboard** - A dashboard where superusers can easily track and update orders. Customer messages could also be managed in this dashboard.
+<br>
+
+**Personalized Recommendations** - A recommended product section featuring products the user is likely to be interested in based on past purchases. This could also be based on a set of category or product preferences the user could specify in their profile.
+<br>
 
 ## Information Architecture
 
