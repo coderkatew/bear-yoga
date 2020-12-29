@@ -10,11 +10,10 @@ class TestOrderForm(TestCase):
             'email': 'bearyoga@example.com',
             'phone_number': '012 3456789',
             'country': 'IE',
-            'address_line1': '1 Test Lane',
+            'street_address1': '1 Test Lane',
             'town_or_city': 'Big City'})     
-        self.assertTrue(form.is_valid())
+        self.assertFalse(form.errors)
 
     def test_alert_invalid_form(self):
         form = OrderForm({'form': ''})
-        self.assertFalse(form.is_valid())
         self.assertEqual(form.errors['full_name'], [u'This field is required.'])
