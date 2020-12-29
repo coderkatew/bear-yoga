@@ -58,11 +58,73 @@ The following test card details can be used to submit test Stripe payments on th
 * Easily access an admin menu so that I can quickly add products and retreats to the site.
 <br>
 
-## Documentation
+## Wireframes
 <br>
 
+
 ## Features
+
+### Existing Features
+
+**Navbars and navigation**  
+There are two navbars displayed on the site - one main navbar and one specific to product categories and retreats. The navigation panel allows the user to move quickly to specific pages on the site. The main navbar shrinks when viewed on smaller devices and the category navbar is moved to a dropdown menu at the top-left of the screen to simplify the interface. The options displayed depend on the access level the user has - a superuser will see all menu options while a non-logged in user will see only the options available to them.
+<br><br>
+<img src="static/images/navbars.png" style="margin: 0;">
+
+**Product Views, Sorting and Search** 
+* View Products - Users can scroll through the product list on the main screen. 
+* Product Sorting - The category navbar can be used to sort by price, rating and category. Each category has a set of sub-categories to help the user to quickly find the item they're looking for.
+* Product Search - The search bar at the top of the screen can be used to search for a specific product or products relating to a particular keyword.<br>
+
+<br><br>
+<img src="static/images/products.png" style="margin: 0;">
+
+**Retreats** <br>
+***Logged-in users only***
+* The main retreats page has a similar layout to the Products screen but doesn't include category sorting or ratings.
+* Users can view retreats but cannot add them to their shopping bag - they are for informational purposes only at the moment and the user would need to contact Bear Yoga for more information. 
 <br>
+
+**Contact** 
+* Users can access the Contact page via the navbar and complete the form to send a message to the site administrators.
+<br>
+
+**Footer**<br>
+The website footer contains a copyright note and links to social media platforms to promote the business. This could be extended to include information such as opening hours (if there is a physical shop), additional contact information, affiliate links, policies and a newsletter sign-up link.
+<br>
+
+**Superuser Admin Features** 
+* Admin menu - Superusers will see an Admin dropdown menu with options to add a new product or retreat.
+* Edit/Delete function - Superusers will see a edit and delete options on all product and retreat entries.
+<br>
+
+**Profile** <br>
+***Logged-in users only***
+* Delivery Address - Users can update their information here.
+* Order History - Users can view their order history and confirmations here. 
+<br>
+
+**Product Detail View** 
+In addition to viewing the product details, users can:
+* Add to Bag - Add the item to their shopping bag.
+* Adjust Quantity - Adjust the quantity of items.
+* Save for Later - Logged in users can add the item to their 'Saved Items' so they can find them easily later.
+<br><br>
+<img src="static/images/product-view.png" style="margin: 0;">
+<br><br>
+
+**Shopping Bag** 
+Users can review their shopping bag and update quantities or remove items before moving to the Checkout screen.
+<br>
+
+**Checkout** 
+* Delivery and Payment Information - Users can fill in their details here and opt to save them to their profile if they wish.
+* Order Summary - Summary of items in the order, delivery fee and total cost.
+* Order Confirmation - Once the user has submitted their details and the payment is successful, an order confirmation screen is displayed.
+<br><br>
+<img src="static/images/checkout.png" style="margin: 0;">
+<br><br>
+
 
 ## Information Architecture
 
