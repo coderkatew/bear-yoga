@@ -92,6 +92,20 @@ Image URL | image_url | URLField | max_length=1024, null=True, blank=True
 Image | image | ImageField | null=True, blank=True
 <br>
 
+**Profile App**<br>
+Name | KEY (Database) | Field Type | Validation<br>
+------------ | ------------- | ------------- | -------------
+User | user | OneToOneField | User, on_delete=models.CASCADE 
+Phone Number | default_phone_number | CharField | max_length=20, null=True, blank=True
+Street Address 1 | default_street_address1 | CharField | max_length=80, null=True, blank=True
+Street Address 2| default_street_address2 | CharField | max_length=80, null=True, blank=True
+Town or City | default_town_or_city | CharField | max_length=40, null=True, blank=True
+County or Region | default_county | CharField | max_length=80, null=True, blank=True
+Country | default_country | CountryField  | blank_label='Country', null=True, blank=True
+Postcode | default_postcode | CharField | max_length=20, null=True, blank=True
+<br>
+
+
 
 ## Technologies Used
 <br>
