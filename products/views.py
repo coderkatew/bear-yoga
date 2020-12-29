@@ -68,11 +68,13 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def add_product(request):
     """ Add product to the website """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only administrators can complete this action.')
+        messages.error(request, 'Sorry, \
+        only administrators can complete this action.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -82,7 +84,8 @@ def add_product(request):
             messages.info(request, 'Product added!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Cannot add this product. Please ensure the form is valid.')
+            messages.error(request, 'Cannot add this product. \
+            Please ensure the form is valid.')
     else:
         form = ProductForm()
 
@@ -98,7 +101,8 @@ def add_product(request):
 def edit_product(request, product_id):
     """ Edit existing product  """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only administrators can complete this action.')
+        messages.error(request, 'Sorry, \
+        only administrators can complete this action.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -109,7 +113,8 @@ def edit_product(request, product_id):
             messages.info(request, 'Product updated!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Cannot update this product. Please ensure form is complete.')
+            messages.error(request, 'Cannot update this product. \
+            Please ensure form is complete.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -127,9 +132,10 @@ def edit_product(request, product_id):
 def delete_product(request, product_id):
     """ Delete a product """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only administrators can complete this action.')
+        messages.error(request, 'Sorry, \
+        only administrators can complete this action.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.info(request, 'Product deleted!')
