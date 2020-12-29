@@ -1,8 +1,7 @@
 # Bear Yoga
 
-<img src="#" style="margin: 0;">
+<img src="static/images/bear-yoga-cover.png" style="margin: 0;">
 
-  
 <br>
 
 # Project Outline
@@ -29,6 +28,8 @@ The following test card details can be used to submit test Stripe payments on th
 
 ## Features
 <br>
+
+
 
 ## Technologies Used
 <br>
