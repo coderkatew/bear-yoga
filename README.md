@@ -11,11 +11,11 @@
 <br>
 
 ## Login Credentials and Stripe Payment Details
+**Login Details**<br>
 Website visitors may browse and purchase products on the site without registering while egistered users have the option to save products to buy at a later date, save delivery and payment information, and view information about upcoming retreats. 
-To register for the site, users will need to provide a verified email address but this has been set to 'optional' for the purposes of this project.
-
+To register for the site, users will need to provide a verified email address but this has been set to 'optional' for the purposes of this project.<br>
 Super user login details have been provided to Code Institute on project submission. 
-
+**Test Card Details**<br>
 The following test card details can be used to submit test Stripe payments on the site:
 
 **Card Number -** 4242 4242 4242 4242<br>
