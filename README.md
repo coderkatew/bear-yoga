@@ -3,6 +3,8 @@
 <img src="static/images/bear-yoga-cover.png" style="margin: 0;">
 
 <br>
+[Visit Bear Yoga here](https://bear-yoga.herokuapp.com/)
+
 
 # Project Outline
 <br>
@@ -28,7 +30,6 @@ The following test card details can be used to submit test Stripe payments on th
 
 ## Features
 <br>
-
 
 
 ## Technologies Used
