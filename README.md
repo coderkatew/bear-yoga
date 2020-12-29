@@ -159,4 +159,19 @@ The following technologies were used to build this project:
 <br>
 
 ## Credits and Acknowledgements
+### Content and Media
+<br>
+
+**Product Images and Details** - All product information (text and images) is from [Amazon](https://amazon.co.uk).
+<br> 
+
+**Retreat Images and Details** - All retreat images included in the project were downloaded from [Unsplash](https://unsplash.com/) or [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page). Retreat descriptions were paraphrased from [this article](https://www.mindbodygreen.com/articles/the-11-major-types-of-yoga-explained-simply).
+<br><br>
+All content on the site is for educational purposes only.
+<br><br>
+
+### Acknowledgements
+I learned the key concepts of HTML, CSS, Python, Javascript and Django from the Code Institute course materials. I read further material on sites like [Django Project](https://www.djangoproject.com/start/overview/) and watched tutorials to improve my knowledge of Django and Heroku.
+<br>
+I used resources like Stack Overflow and W3Schools as well as the Code Institute Slack channels for help with troubleshooting smaller issues during the project. Thanks to Code Institute tutors and my mentor, Guido, for support and guidance during my studies.
 <br>
