@@ -156,6 +156,65 @@ The following technologies were used to build this project:
 <br>
 
 ## Deployment
+### Local Deployment
+To run this project locally on your computer, you'll need:
+
+* GitPod, or another online IDE
+* A Stripe account 
+* An AWS account
+<br>
+And you'll need to install:
+
+* Python3
+* PIP
+* Git
+<br>
+
+**Instructions**
+1. Clone the repository using the command git clone https://github.com/coderkatew/bear-yoga or, save a copy of the GitHub repository located at https://github.com/coderkatew/bear-yoga by clicking the green **'Code'** button in the repository menu and selecting **'Download ZIP'** to extract the zip file to your chosen folder.
+2. In the terminal, change the directory (cd) to the correct location of the file.
+3. Set up the environment variables:
+* Create an `env.py` file in the root directory and add it to the `.gitignore` file.
+* At the beginning of the file, type **import os** to set the environment variables in the operating system.
+4. In the terminal:
+* Install the project requirements using this command  `pip3 install -r requirements.txt`
+* Migrate the models to create a database using `python3 manage.py makemigrations` and `python3 manage.py migrate`
+* Load the data fixtures (categories, products, retreats) into the database using:
+`python3 manage.py loaddata <fixture_name>`
+* Create a superuser for the site admin using `python3 manage.py createsuperuser`
+5. Once those steps have been completed, you can run the application with:
+`python3 manage.py runserver`
+<br> 
+
+To access the **site admin dashboard**, add `/admin` the end of the site's URL link and log in with the superuser credentials created in step 4 above.
+
+
+### Deploying to Heroku
+To deploy the project to Heroku, you can follow these steps:
+
+1. Create a requirements.txt file (this is also required for local deployment, step 4 above).
+2. Create a Procfile using the command echo web: `python manage.py > Procfile`, and add this command:
+`web: gunicorn bear_yoga.wsgi:application`
+3. Make sure the env.py has been added to the `.gitignore` file. All installations required for successful deployment have been install in the project and are listed in the requirements.txt file.
+4. Create an app in Heroku named 'bear-yoga'.
+5. Go to 'Reveal Config Vars' in settings in Heroku and add the folloint environmental variables:
+<br>
+
+KEY |	VALUE
+------------ | ------------- | 
+DATABASE_URL | `your postgres database url`
+SECRET_KEY | `your secret key` 
+STRIPE_PUBLIC_KEY | `your stripe public key`
+STRIPE_SECRET_KEY | `your stripe secret key`
+STRIPE_WH_SECRET | `your stripe webhook key`
+USE_AWS	| `True`
+AWS_ACCESS_KEY_ID |`your aws access key`
+AWS_SECRET_ACCESS_KEY | `your aws secret access key`
+
+6. Log in to Heroku through the terminal with the comman heroku login -i.
+7. Once you are logged in, use the command git push heroku master to push the project to Heroku.
+8. Click 'Open App' at the top of the Heroku dashboard and the project will open in a new tab.
+
 <br>
 
 ## Credits and Acknowledgements
