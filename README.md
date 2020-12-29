@@ -1,32 +1,47 @@
 # Bear Yoga
 
+
+<br>
+<br>
 <img src="static/images/bear-yoga-cover.png" style="margin: 0;">
 
+<br>
+
+
+Bear Yoga is an ecommerce website featuring yoga products and information about yoga retreats.
+<br>
 <br>
 
 [Visit Bear Yoga](https://bear-yoga.herokuapp.com/ "Bear Yoga")
 
 
-# Project Outline
 <br>
 <img src="static/images/device-mockup.png" style="margin: 0;">
 <br>
 
-## Login Credentials and Stripe Payment Details
-**Login Details**<br>
-Website visitors may browse and purchase products on the site without registering while egistered users have the option to save products to buy at a later date, save delivery and payment information, and view information about upcoming retreats. 
-To register for the site, users will need to provide a verified email address but this has been set to 'optional' for the purposes of this project.<br><br>
-Super user login details have been provided to Code Institute on project submission. <br><br>
-**Test Card Details**<br>
-The following test card details can be used to submit test Stripe payments on the site:
+# Project Outline
 
-**Card Number -** 4242 4242 4242 4242<br>
-**CVC -** Any 3 digit number<br>
-**Expiration Date -** Any date in the future<br>
-**Phone Number, Address and Email Address -** These can all be fictional<br><br>
 
 ## UX
 <br>
+
+### Strategy
+My goal for this project was to create a simple site that is easy to navigate and that users would want to visit again. The target audience for this site is people who are interested in yoga. Although the main focus of the website is to sell products and promote yoga retreats, it could be expanded to include a community element like a member forum where users could share tips and recommendations. 
+<br>
+
+**Website visitors** can browse through all of the products and make purchases without having to register for an account. 
+<br>
+
+**Registered users** have the additional benefits of an account where their delivery information, order history and saved items are stored for them to access at any time, as well as access to information about yoga retreats run by Bear Yoga. 
+<br>
+
+**Superusers (site owners)** have the option to add, view, update and delete (CRUD) products along with the features of a standard account so site owners can quickly make updates to their product offerings and view the content displayed to their registered users.   
+
+### Who is this website for?
+* People who want to purchase yoga products
+* People who'd like to find out about yoga retreats 
+* A business owner who wants to promote their business and sell products online
+
 
 ### User Stories
 **As a site visitor, I want to:**
@@ -58,11 +73,30 @@ The following test card details can be used to submit test Stripe payments on th
 * Easily access an admin menu so that I can quickly add products and retreats to the site.
 <br>
 
-## Wireframes
+## Login Credentials and Stripe Payment Details
+**Login Details**<br>
+Website visitors may browse and purchase products on the site without registering while egistered users have the option to save products to buy at a later date, save delivery and payment information, and view information about upcoming retreats. 
+To register for the site, users will need to provide a verified email address but this has been set to 'optional' for the purposes of this project.<br><br>
+Super user login details have been provided to Code Institute on project submission. <br><br>
+**Test Card Details**<br>
+The following test card details can be used to submit test Stripe payments on the site:
+
+**Card Number -** 4242 4242 4242 4242<br>
+**CVC -** Any 3 digit number<br>
+**Expiration Date -** Any date in the future<br>
+**Phone Number, Address and Email Address -** These can all be fictional<br><br>
+
+## Design
+### Surface Level Design
+
+### Defensive Design
+
+## Website Layout 
+### Wireframes
 <br>
 
 
-## Features
+## Website Features
 
 ### Existing Features
 
@@ -135,7 +169,7 @@ Users can review their shopping bag and update quantities or remove items before
 **Personalized Recommendations** - A recommended product section featuring products the user is likely to be interested in based on past purchases. This could also be based on a set of category or product preferences the user could specify in their profile.
 <br>
 
-## Information Architecture
+## Information Architecture & Structure
 
 ### Database
 I used sqlite3 as a database for development and moved to Heroku's PostgreSQL for deployment.<br><br>
