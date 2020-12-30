@@ -383,16 +383,16 @@ To deploy the project to Heroku, you can follow these steps:
 5. Go to 'Reveal Config Vars' in settings in Heroku and add the following environmental variables:
 <br>
 
-    KEY | VALUE<br>
-    ------------ | -------------
-    DATABASE_URL | `your postgres database url`
-    SECRET_KEY | `your secret key` 
-    STRIPE_PUBLIC_KEY | `your stripe public key`
-    STRIPE_SECRET_KEY | `your stripe secret key`
-    STRIPE_WH_SECRET | `your stripe webhook key`
-    USE_AWS	| `True`
-    AWS_ACCESS_KEY_ID |`your aws access key`
-    AWS_SECRET_ACCESS_KEY | `your aws secret access key`
+KEY | VALUE<br>
+------------ | -------------
+DATABASE_URL | `your postgres database url`
+SECRET_KEY | `your secret key` 
+STRIPE_PUBLIC_KEY | `your stripe public key`
+STRIPE_SECRET_KEY | `your stripe secret key`
+STRIPE_WH_SECRET | `your stripe webhook key`
+USE_AWS	| `True`
+AWS_ACCESS_KEY_ID |`your aws access key`
+AWS_SECRET_ACCESS_KEY | `your aws secret access key`
 
 6. Migrate the models to create a database using `python3 manage.py makemigrations` and `python3 manage.py migrate`
 7. Load the data fixtures (categories, products, retreats) into the database using:
