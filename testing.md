@@ -1,13 +1,15 @@
 # Project Testing
 
+1. [Automated Testing](#automated-testing)
+    * [Django Unit Tests](#django-unit-tests)
+    * [Flake8 Tests](#flake8-tests)
+    * [Code Validators](#code-validators)
 
-1. Automated Testing
+2. [Manual Testing](#manual-testing)
 
-2. Manual Testing
+3. [User Stories](#user-stories)
 
-3. User Stories
-
-4. Bugs
+4. [Bugs](#bugs)
 
 <br>
 
@@ -34,7 +36,7 @@ I completed these tests towards the end of the project rather than taking a Test
 I used the `python3 -m flake8` command in the terminal to ensure the code adheres to the PEP 8 style guidelines and updated formatting across the project to address errors that came up. 
 
 
-### Validation Programs
+### Code Validators
 * The project HTML files were tested using W3C Markup Validator.
 * The project CSS files were tested using Jigsaw CSS Validator. 
 * The project Javascript functions were tested using JSHint. 
@@ -46,7 +48,6 @@ This project has been tested manually on desktop, iPad and mobile in Chrome, Saf
 <br>All images are under 5MB to ensure they load quickly.
 
 ## User Stories
-<br>
 
 **As a registered user, I want to:**
 <br>
