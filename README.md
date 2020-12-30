@@ -131,6 +131,7 @@ The favicon is a bear paw also shown in the title logo. The intention is that we
 
 ## Website Layout 
 ### Wireframes
+The wireframes for this project are located in the [wireframes folder](https://github.com/coderkatew/bear-yoga/tree/master/wireframes).
 
 <br>
 
