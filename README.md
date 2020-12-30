@@ -31,6 +31,30 @@ The following test card details can be used to submit test Stripe payments on th
 
 # Project Outline
 
+1. [UX](#ux)
+    * [Strategy](#strategy)
+    * [Target Audience](#target-audience)
+    * [User Stories](#user-stories)
+2. [Design](#design)
+    * [Surface Level Design](#surface-level-design)
+    * [Defensive Design](#defensive-design)
+3. [Website Layout](#website-layout)
+    * [Wireframes](#wireframes)
+    * [Defensive Design](#defensive-design)
+4. [Website Features](#website-features)
+    * [Existing Features](#existing-features)
+    * [Features Left to Implement](#features-left-to-implement)
+5. [Information Architecture and Structure](#information-architecture-and-structure)
+    * [Database](#database)
+    * [Data Models](#data-models)
+6. [Technologies Used](#technologies-used)
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+    * [Local Deployment](#local-deployment)
+    * [Deploying to Heroku](#deploying-to-heroku)
+9. [Credits and Acknowledgements](#credits-and-acknowledgements)
+    * [Content and Media](#content-and-media)
+    * [Acknowledgements](#acknowledgements)
 
 ## UX
 
@@ -46,7 +70,7 @@ My goal for this project was to create a simple site that is easy to navigate an
 
 * **Superusers (site owners)** have the option to add, view, update and delete (CRUD) products along with the features of a standard account so site owners can quickly make updates to their product offerings and view the content displayed to their registered users.   
 
-### Who is this website for?
+### Target Audience
 * People who want to purchase yoga products
 * People who'd like to find out about yoga retreats 
 * A business owner who wants to promote their business and sell products online
@@ -57,7 +81,7 @@ My goal for this project was to create a simple site that is easy to navigate an
 * View a list of products so that I can select items I want to purchase.
 * View individual product details so that I can easily see the price, description and product rating.
 * Easily view the total cost of the items in my shopping bag so that I can keep track of my spending.
-* Easily register for an account so that I can save my details and view my purchase history
+* Easily register for an account so that I can save my details and view my purchase history.
 * Sort the list of products so that I can quickly identify the cheapest or most expensive items.
 * Sort the list of products so that I can quickly identify products with the highest ratings.
 * Search for an item using a keyword so I can find relevant products.
@@ -162,7 +186,7 @@ Users can review their shopping bag and update quantities or remove items before
 * Order Confirmation - Once the user has submitted their details and the payment is successful, an order confirmation screen is displayed.
 <br><br>
 <img src="static/images/checkout.png" style="margin: 0;">
-<br><br>
+<br>
 
 ### Features Left to Implement
 **Retreat Booking System** - A booking system that allows users to book and pay for upcoming yoga retreats. Users who have opted in on their profile could be notified when a new event has been added, and submit reviews of past events.
@@ -174,7 +198,7 @@ Users can review their shopping bag and update quantities or remove items before
 **Personalized Recommendations** - A recommended product section featuring products the user is likely to be interested in based on past purchases. This could also be based on a set of category or product preferences the user could specify in their profile.
 <br>
 
-## Information Architecture & Structure
+## Information Architecture and Structure
 
 ### Database
 I used sqlite3 as a database for development and moved to Heroku's PostgreSQL for deployment.<br><br>
@@ -263,6 +287,7 @@ Image | image | ImageField | null=True, blank=True
 ## Technologies Used
 <br>
 The following technologies were used to build this project:
+<br>
 
 **HTML, CSS, JavaScript and Python** - Programming languages used.
 
@@ -342,8 +367,8 @@ To deploy the project to Heroku, you can follow these steps:
 5. Go to 'Reveal Config Vars' in settings in Heroku and add the following environmental variables:
 <br>
 
-    KEY |	VALUE
-    ------------ | ------------- | 
+    KEY | VALUE<br>
+    ------------ | -------------
     DATABASE_URL | `your postgres database url`
     SECRET_KEY | `your secret key` 
     STRIPE_PUBLIC_KEY | `your stripe public key`
@@ -379,3 +404,5 @@ I learned the key concepts of HTML, CSS, Python, Javascript and Django from the 
 <br>
 I used resources like Stack Overflow and W3Schools as well as the Code Institute Slack channels for help with troubleshooting smaller issues during the project. Thanks to Code Institute tutors and my mentor, Guido, for support and guidance during my studies.
 <br>
+<br>
+
