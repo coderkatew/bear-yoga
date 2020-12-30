@@ -120,3 +120,6 @@ I encountered the following bugs during development of this project:
 **Issue 4**<br>
 **Problem:** Item count and subtotal were not displaying in the shopping bag or when products were added.<br>
 **Solution:** The item count (originally 'product_count') and subtotal (originally 'total')  were defined as '0' in bag_contents in contexts.by (in the bag app) so renaming them in 'context' resolved the issue.<br>
+<br>
+
+[Back to Top](#project-testing)
