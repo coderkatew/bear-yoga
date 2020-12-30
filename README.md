@@ -110,18 +110,28 @@ My goal for this project was to create a simple site that is easy to navigate an
 
 ## Design
 ### Surface Level Design
+I chose a minimal design for this site to make sure it is easy and intuitive for the user to navigate and to bring the focus to the products the site owner is showcasing. The colour scheme consists of a small number of colours and many options are located in dropdown menus in the interface to simplify the navigation and decision process for the user when they arrive on the site.
+The main body of the interface is mostly black and white to ensure everything is clear and legible, especially on smaller devices.<br>
+The fonts used in the project are:
+* [Caveat](https://fonts.google.com/specimen/Caveat) A playful, accent font for the logo.
+* [Noto Sans](https://fonts.google.com/specimen/Noto+Sans)
+* [Roboto](https://fonts.google.com/specimen/Roboto)
+
+I used Bootstrap across the site to ensure elements are dynamic and responsive such as the navbars, product page layouts and retreats layouts. I kept some default styles as they fitted well with the overall theme.<br>
+The favicon is a bear paw also shown in the title logo. The intention is that website visitors will develop a familiarity with it and have a consistent brand experience that could also extend to the business's social media pages, and possibly even branded merchandise that could be sold on the website as the brand becomes more established.<br>
 
 ### Defensive Design
-* Form Feedback -If a user makes an error when completing a form on the site (for example, forgetting to fill in a field) they will see a prompt indicating the error and how they should proceed.
-* Django-allauth - Django allauth is used to register and authenticate users on the site.
-* Toast Messages - Toast messages have been added across the site with success, error, warning, and informational messages so that the user is reassured and informed whenever they take action on the site.
-* Access Level Toasts - If a user somehow attempts an action that is outside of their access level, a toast will be displayed to inform them of the error. 
-* CSRF Tokens - CSRF tokens are used across the site to provide additional security for requests.
-* 404 and 500 Errors - The site has custom 404 and 500 error templates in case users come across internal server errors or missing pages on the site.
+* **Form Feedback** -If a user makes an error when completing a form on the site (for example, forgetting to fill in a field) they will see a prompt indicating the error and how they should proceed.
+* **Django-allauth** - Django allauth is used to register and authenticate users on the site.
+* **Toast Messages** - Toast messages have been added across the site with success, error, warning, and informational messages so that the user is reassured and informed whenever they take action on the site.
+* **Access Level Toasts** - If a user somehow attempts an action that is outside of their access level, a toast will be displayed to inform them of the error. 
+* **CSRF Tokens** - CSRF tokens are used across the site to provide additional security for requests.
+* **404 and 500 Errors** - The site has custom 404 and 500 error templates in case users come across internal server errors or missing pages on the site.
 
 
 ## Website Layout 
 ### Wireframes
+
 <br>
 
 
@@ -196,6 +206,7 @@ Users can review their shopping bag and update quantities or remove items before
 <br>
 
 **Personalized Recommendations** - A recommended product section featuring products the user is likely to be interested in based on past purchases. This could also be based on a set of category or product preferences the user could specify in their profile.
+<br>
 <br>
 
 ## Information Architecture and Structure
@@ -320,6 +331,7 @@ The following technologies were used to build this project:
 ## Testing
 The testing process and results for this project can be found in the [testing.md file](https://github.com/coderkatew/bear-yoga/blob/master/testing.md).
 <br>
+<br>
 
 ## Deployment
 ### Local Deployment
@@ -354,7 +366,8 @@ And you'll need to install:
 <br> 
 
 To access the **site admin dashboard**, add `/admin` the end of the site's URL link and log in with the superuser credentials created in step 4 above.
-
+<br>
+<br>
 
 ### Deploying to Heroku
 To deploy the project to Heroku, you can follow these steps:
