@@ -14,7 +14,17 @@ Bear Yoga is an ecommerce website featuring yoga products and information about 
 
 [Visit Bear Yoga](https://bear-yoga.herokuapp.com/ "Bear Yoga")
 
+### Details for Testing<br>
+**Login Details**<br>
+To register for the site, users will need to provide a verified email address but this has been set to 'optional' for the purposes of this project.<br><br>
+Super user login details have been provided to Code Institute on project submission. <br><br>
+**Test Card Details**<br>
+The following test card details can be used to submit test Stripe payments on the site:
 
+        Card Number - 4242 4242 4242 4242
+        CVC - Any 3 digit number
+        Expiration Date - Any date in the future
+        Phone Number, Address and Email Address - These can all be fictional
 <br>
 <img src="static/images/device-mockup.png" style="margin: 0;">
 <br>
@@ -23,19 +33,18 @@ Bear Yoga is an ecommerce website featuring yoga products and information about 
 
 
 ## UX
-<br>
 
 ### Strategy
 My goal for this project was to create a simple site that is easy to navigate and that users would want to visit again. The target audience for this site is people who are interested in yoga. Although the main focus of the website is to sell products and promote yoga retreats, it could be expanded to include a community element like a member forum where users could share tips and recommendations. 
 <br>
 
-**Website visitors** can browse through all of the products and make purchases without having to register for an account. 
+* **Website visitors** can browse through all of the products and make purchases without having to register for an account. 
 <br>
 
-**Registered users** have the additional benefits of an account where their delivery information, order history and saved items are stored for them to access at any time, as well as access to information about yoga retreats run by Bear Yoga. 
+* **Registered users** have the additional benefits of an account where their delivery information, order history and saved items are stored for them to access at any time, as well as access to information about yoga retreats run by Bear Yoga. 
 <br>
 
-**Superusers (site owners)** have the option to add, view, update and delete (CRUD) products along with the features of a standard account so site owners can quickly make updates to their product offerings and view the content displayed to their registered users.   
+* **Superusers (site owners)** have the option to add, view, update and delete (CRUD) products along with the features of a standard account so site owners can quickly make updates to their product offerings and view the content displayed to their registered users.   
 
 ### Who is this website for?
 * People who want to purchase yoga products
@@ -73,23 +82,19 @@ My goal for this project was to create a simple site that is easy to navigate an
 * Easily access an admin menu so that I can quickly add products and retreats to the site.
 <br>
 
-## Login Credentials and Stripe Payment Details
-**Login Details**<br>
-Website visitors may browse and purchase products on the site without registering while egistered users have the option to save products to buy at a later date, save delivery and payment information, and view information about upcoming retreats. 
-To register for the site, users will need to provide a verified email address but this has been set to 'optional' for the purposes of this project.<br><br>
-Super user login details have been provided to Code Institute on project submission. <br><br>
-**Test Card Details**<br>
-The following test card details can be used to submit test Stripe payments on the site:
 
-**Card Number -** 4242 4242 4242 4242<br>
-**CVC -** Any 3 digit number<br>
-**Expiration Date -** Any date in the future<br>
-**Phone Number, Address and Email Address -** These can all be fictional<br><br>
 
 ## Design
 ### Surface Level Design
 
 ### Defensive Design
+* Form Feedback -If a user makes an error when completing a form on the site (for example, forgetting to fill in a field) they will see a prompt indicating the error and how they should proceed.
+* Django-allauth - Django allauth is used to register and authenticate users on the site.
+* Toast Messages - Toast messages have been added across the site with success, error, warning, and informational messages so that the user is reassured and informed whenever they take action on the site.
+* Access Level Toasts - If a user somehow attempts an action that is outside of their access level, a toast will be displayed to inform them of the error. 
+* CSRF Tokens - CSRF tokens are used across the site to provide additional security for requests.
+* 404 and 500 Errors - The site has custom 404 and 500 error templates in case users come across internal server errors or missing pages on the site.
+
 
 ## Website Layout 
 ### Wireframes
