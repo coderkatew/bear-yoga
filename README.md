@@ -17,7 +17,7 @@ Bear Yoga is an ecommerce website featuring yoga products and information about 
 ### Details for Testing<br>
 **Login Details**<br>
 To register for the site, users will need to provide a verified email address but this has been set to 'optional' for the purposes of this project.<br><br>
-Super user login details have been provided to Code Institute on project submission. <br><br>
+Superuser login details have been provided to Code Institute on project submission. <br><br>
 **Test Card Details**<br>
 The following test card details can be used to submit test Stripe payments on the site:
 
@@ -113,7 +113,7 @@ My goal for this project was to create a simple site that is easy to navigate an
 I chose a minimal design for this site to make sure it is easy and intuitive for the user to navigate and to bring the focus to the products the site owner is showcasing. The colour scheme consists of a small number of colours and many options are located in dropdown menus in the interface to simplify the navigation and decision process for the user when they arrive on the site.
 The main body of the interface is mostly black and white to ensure everything is clear and legible, especially on smaller devices.<br>
 The fonts used in the project are:
-* [Caveat](https://fonts.google.com/specimen/Caveat) A playful, accent font for the logo.
+* [Caveat](https://fonts.google.com/specimen/Caveat) - A playful accent font for the logo.
 * [Noto Sans](https://fonts.google.com/specimen/Noto+Sans)
 * [Roboto](https://fonts.google.com/specimen/Roboto)
 
@@ -141,7 +141,9 @@ The wireframes for this project are located in the [wireframes folder](https://g
 ### Existing Features
 
 **Navbars and navigation**  
-There are two navbars displayed on the site - one main navbar and one specific to product categories and retreats. The navigation panel allows the user to move quickly to specific pages on the site. The main navbar shrinks when viewed on smaller devices and the category navbar is moved to a dropdown menu at the top-left of the screen to simplify the interface. The options displayed depend on the access level the user has - a superuser will see all menu options while a non-logged in user will see only the options available to them.
+There are two navbars displayed on the site - one main navbar and one specific to product categories and retreats. The navigation panel allows the user to move quickly to specific pages on the site. <br>
+The main navbar shrinks when viewed on smaller devices and the category navbar is moved to a dropdown menu at the top-left of the screen to simplify the interface. <br>
+The options displayed depend on the access level the user has - a superuser will see all menu options while a non-logged in user will see only the options available to them.
 <br><br>
 <img src="static/images/navbars.png" style="margin: 0;">
 
